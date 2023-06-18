@@ -1,36 +1,18 @@
-//import logo from './logo.svg';
-import newlogo from './Neff.png';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-
- 
-function loadPlanCard() {
-
-  var card = document.createElement("div");
-  card.className = "App-card";
-  card.innerHTML = "<h3>Here is your plan that I divised for you!</h3>";
-  document.body.appendChild(card);
-}
+import Home from './pages/components/Home'
 
 function App() {
-  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={newlogo} className="App-logo" alt="logo" />
-          
-          <b>
-            TaskCompanion
-          </b>
-          
-        
-        
-        
-        <button 
-          className= "App-button" 
-          onClick={loadPlanCard()}> Get Started </button>
-
-      </header>
-    </div>
+    <>
+      <Router>
+        <Routes>
+          <Route path='/' exact element={<Home />} />
+        </Routes>
+      </Router>
+      
+    </>
   );
 }
 

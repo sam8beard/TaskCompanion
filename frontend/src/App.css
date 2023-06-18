@@ -1,71 +1,9 @@
-.App {
-  text-align: center;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'PT Sans', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation-name: rotate;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    animation: App-logo-spin infinite 20s linear;
-    padding-bottom: 25px;
-  }
-}
 
-.App-header {
-  background-color: #e2e0e0;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-family:monospace;
-  font-size: calc(14px + 8vmin);
-  color: rgb(28, 49, 147);
-  
-}
-
-.App-card { 
-  font-family: monospace;
-  font-size:x-large;
-  height: 600px;
-  width: 400px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  color:rgb(0, 0, 0);
-  background-color: rgb(238, 200, 74);
-}
-.App-card:hover { 
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-}
-
-.App-button { 
-  color: rgb(149, 168, 255);
-  font-family: monospace;
-  font-size:25px;
-  font-weight: bold;
-  align-self: center;
-  height: 60px;
-  width: 200px;
-}
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  50% {
-    transform: rotate(180deg);
-  }
-  100% { 
-    transform: rotate(360deg)
-  }
-}
