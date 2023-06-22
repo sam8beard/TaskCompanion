@@ -1,4 +1,4 @@
-img {
+.neffington {
     object-fit: cover;
     width: 400px;
     height: 400px;
@@ -75,10 +75,34 @@ img {
     margin: 6px;
 }
 
+.btn {
+  width: auto;
+  background-color: rgb(121, 120, 120); 
+  color: black; 
+  border: 2px solid black; 
+  transition: color 0.5s; 
+}
+
 @media screen and (max-width: 960px) {
     .loginPage-container > h1 {
       font-size: 70px;
       margin-top: -150px;
+    }
+
+    .loginPage-container > p {
+      font-size: 30px;
+    }
+  
+    .btn-mobile {
+      display: block;
+      text-decoration: none;
+    }
+    .btn {
+      width: auto;
+      background-color: rgb(121, 120, 120); 
+      color: black; 
+      border: 2px solid black; 
+      transition: color 0.5s; 
     }
   }
   
@@ -98,6 +122,10 @@ img {
     }
   
     .btn {
-      width: 100%;
+      width: auto;
+      background-color: rgb(121, 120, 120); 
+      color: black; 
+      border: 2px solid black; 
+      transition: color 0.5s; 
     }
   }

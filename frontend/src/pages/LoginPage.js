@@ -1,8 +1,9 @@
 import React from 'react';
 import '../App.css';
+import { Button } from './Button';
 import './LoginPage.css';
 
-const neffPic = new URL("../Neff.png", import.meta.url)
+const neffington = new URL("../Neff.png", import.meta.url)
 
 function LoginPage() {
     const [userName, setUserName] = React.useState("");
@@ -17,7 +18,7 @@ function LoginPage() {
 
     return(
         <div className='loginPage-container' >
-            <img src={neffPic} alt='Adventure'/> 
+            <img src={neffington} alt='Adventure'/> 
             <input
                 type="text"
                 value={userName}
@@ -25,11 +26,20 @@ function LoginPage() {
                 placeholder="User Name"
             />
             <input
-                type="text"
+                type="password"
                 value={password}
                 onChange={handlePassword}
                 placeholder="Password"
             />
+            <div className='loginPage-btns'>
+                <Button
+                    className='btns'
+                    buttonStyle='btn--outline'
+                    buttonSize='btn--large'
+                >
+                   LOGIN
+                </Button>
+            </div>
         </div>
     );
 }
